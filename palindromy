@@ -1,0 +1,8 @@
+i = input("Podaj słowo: ")
+
+reverse = i[::-1]
+
+if (i == reverse):
+    print("podane słowo jest palindromem")
+else:
+    print("podane słowo nie jest palindromem")
