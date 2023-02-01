@@ -1,26 +1,20 @@
-print("select action")
-print("1. add")
-print("2. substract")
-print("3. multiply")
-print("4. divide")
+print("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:")
 
 operation = input()
+a = input("Podaj pierwszą liczbę:")
+b = input("Podaj drugą liczbę:")
 
 if operation == "1":
-    num1 = input("enter first number: ")
-    num2 = input("enter second number: ")
-    print("The sum is", str(int(num1) + int(num2)))
+    print("Dodaję", a, "i", b)
+    print("Wynik to:", str(int(a) + int(b)))
 elif operation == "2":
-    num1 = input("enter first number: ")
-    num2 = input("enter second number: ")
-    print("The difference is", str(int(num1) - int(num2)))
+    print("Odejmuję", b, "od", a)
+    print("Wynik to:", str(int(a) - int(b)))
 elif operation == "3":
-    num1 = input("enter first number: ")
-    num2 = input("enter second number: ")
-    print("The product is", str(int(num1) * int(num2)))
+    print("Mnożę", a, "i", b)
+    print("Wynik to:", str(int(a) * int(b)))
 elif operation == "4":
-    num1 = input("enter first number: ")
-    num2 = input("enter second number: ")
-    print("The result is", str(int(num1) / int(num2)))
+    print("Dzielę", b, "przez", a)
+    print("Wynik to:", str(int(a) / int(b)))
 else:
-    print("Invalid entry")
+    print("Nie wybrano poprawnie działania")
